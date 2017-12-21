@@ -10,14 +10,14 @@ int main()
 	for(i=0;i<n;i++)
 	{
 	count=1;
-	if(s[i]=="*")
+	if(s[i]=='*')
 	continue;
 		for(j=i+1;j<n;j++)
 		{
 			if(s[i]==s[j])
 			{
 				count=count+1;
-				s[j]="*";	
+				s[j]='*';	
 			}
 		}
 	printf("%c-%d\n",s[i],count);
