@@ -8,6 +8,21 @@ int main()
 	scanf("%s",s);
 	n=strlen(s);
 	x=n;
+	if(n==1)
+	{
+		printf("enter more than one character");
+	}
+	for(i=0;i<n;i++)
+	{
+	   if(s[i]<'a' || (s[i]>'z'&&s[i]<'A') || s[i]>'Z') 
+	      printf("number or character encountered\n");
+	      printf("enter only alphabets")
+	      break;
+	}
+	exit(0);
+	
+	if(n>1)
+	{
 	for(i=0;i<n/2;i++)
 	{
 		temp=s[i];
@@ -29,5 +44,6 @@ int main()
 	}
 	}
 	printf("final string without vowel:%s",s);
-    
 }
+}
+
