@@ -1,43 +1,49 @@
 #include <stdio.h>
-#include <math.h>
-
+int power(int x,int c)
+{
+	int i=0,p=1;
+	while(i<c)
+	{
+	p=p*x;
+	i++;
+    }
+	return (p);
+}
+int order(int n)
+{
+	int count=1;
+	while(n>=10)
+	{
+		n=n/10;
+		count++;
+	}
+	return (count);
+}
 int main()
 {
-    int low, high, i, temp1, temp2, remainder, n = 0, result = 0;
+    int n, originalInteger,x,y,sum=0,c;
+	int low,high;
 
-    printf("Enter two numbers(intervals): ");
-    scanf("%d %d", &low, &high);
-    printf("Armstrong numbers between %d an %d are: ", low, high);
-
-    for(i = low + 1; i < high; ++i)
+    scanf("%d %d",low,high);
+    
+    while(low<high)
+	{
+	originalInteger = low;
+    c=order(low);
+    while( n!=0 )
     {
-        temp2 = i;
-        temp1 = i;
-
-        // number of digits calculation
-        while (temp1 != 0)
-        {
-            temp1 /= 10;
-            ++n;
-        }
-
-        // result contains sum of nth power of its digits
-        while (temp2 != 0)
-        {
-            remainder = temp2 % 10;
-            result += pow(remainder, n);
-            temp2 /= 10;
-        }
-
-        // checks if number i is equal to the sum of nth power of its digits
-        if (result == i) {
-            printf("%d ", i);
-        }
-
-        // resetting the values to check Armstrong number for next iteration
-        n = 0;
-        result = 0;
-
+    	x=n%10;
+    	y=power(x,c);
+    	sum=sum+y;
+    	n=n/10;
+	}
+	if (originalInteger == sum)
+        printf("%d is a palindrome.", originalInteger);
+    else
+        printf("%d is not a palindrome.", originalInteger);
+        
+    low++;    
+        
     }
-    return 0;
-}
+return(0);
+	}
