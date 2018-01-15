@@ -5,6 +5,7 @@ int main()
 	scanf("%d %d %d",&a,&b,&c);
 	if(a==b==c)
 	printf("all are equal");
+	break;
 	if(a>b && a>c)
 	printf("a is greater");
 	else if(b>a && b>c)
