@@ -1,17 +1,17 @@
 #include<stdio.h>
 int main()
 {
-	int n,a,d,i,sum=0;
+	int b,a,c,i,sum=0;
 	printf("enter no.of.elements in ap series ");
-	scanf("%d",&n);
-	printf("enter starting number ");
 	scanf("%d",&a);
+	printf("enter starting number ");
+	scanf("%d",&b);
 	printf("enter the difference ");
-	scanf("%d",&d);
-	for(i=0;i<n;i++)
+	scanf("%d",&c);
+	for(i=0;i<a;i++)
 	{
-		sum=sum+a;
-		a=a+d;
+		sum=sum+b;
+		b=b+c;
 		
 	}
 	printf("%d",sum);
