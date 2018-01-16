@@ -3,6 +3,7 @@ int main()
 {
     int n1,n;
     scanf("%d",&n);
+    
     n1=n+1;
     while(n1!=0)
     {
@@ -13,5 +14,5 @@ int main()
         }
         n1++;
     }
-    return 0;
+  
 }
