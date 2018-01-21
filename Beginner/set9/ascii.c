@@ -7,6 +7,4 @@ int main()
    scanf("%c",&c);
    d=(int)c;
    printf("%d",d);
-   
-	return 0;
 }
