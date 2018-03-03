@@ -17,5 +17,5 @@ int main()
     }
     a[i]='\0';
     printf("%s",a);
-	return 0;
+
 }
