@@ -17,5 +17,5 @@ int main(void)
 		str[i]='C';
 	}
 	printf("%s",str);
-	return 0;
+
 }
