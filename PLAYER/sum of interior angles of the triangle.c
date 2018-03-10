@@ -12,5 +12,5 @@ int main()
     {
         printf("they cant be the interior angles of the triangle");
     }
-	return 0;
+	
 }
