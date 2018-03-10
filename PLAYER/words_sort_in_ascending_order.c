@@ -21,8 +21,8 @@ int i,n,j;
           }
      }
      }
-     for(i=0;i<n;i++)
+     for(i=1;i<=n;i++)
      {
-         printf("%s\n",str[i]);
+         printf("%s\n",str[i-1]);
      }
 }
