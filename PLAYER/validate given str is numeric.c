@@ -24,5 +24,5 @@ int main() {
 	{
 	    printf("no..not a numeric");
 	}
-	return 0;
+	
 }
