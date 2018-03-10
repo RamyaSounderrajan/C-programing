@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-void main()
+int main()
 {char str[100][200],a[100];
 int i,n,j;
     printf("enter the no of strings");
